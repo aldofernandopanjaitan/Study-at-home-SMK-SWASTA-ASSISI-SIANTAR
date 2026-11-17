@@ -298,7 +298,6 @@
         /* ================= FITUR 1: BERANDA ================= */
         function renderDashboard() {
             const isSiswa = currentUser.role === 'Siswa';
-            const isGuru = currentUser.role === 'Guru';
             const myPresensiCount = db.presensi.filter(p => p.nama.toLowerCase() === currentUser.name.toLowerCase()).length;
 
             setContent(`
